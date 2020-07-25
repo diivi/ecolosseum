@@ -6,6 +6,7 @@
   <title>coVida</title>
   <link rel="stylesheet" href="./css/default.css">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="icon" href="./img/health.png">
 </head>
 <body>
   <div class="header">
@@ -101,7 +102,7 @@
 <div class="first">
   <h1 >Explore Features</h1>
 <div class="menu">
-  <div class="one" data-aos="fade-up" data-aos-duration="1000">
+  <div class="one" data-aos="fade-up" data-aos-duration="1000" onclick="tracker()">
     <img src="./img/track.png" alt="">
     <h3>Live COVID Tracker</h3>
     <p>Click to view our live covid-19 tracker and stay informed about the outspread and it's influence in your community.  Maybe the statistics will make you stay at home if  words don't. <br> <br><br></p> 
@@ -167,10 +168,13 @@
   </div>
   </div>
   <div class="inf aware" >
+    <div class='fotofon'  >
+      <img src="./img/coroner.svg" alt="" data-aos="fade-up" data-aos-duration="1000" >
+    </div>
     <div class="sidetxt">
     <h2>Being Aware</h2>
     <p>
-      The median age of patients is between 49 and 56 years. The incubation period of this virus has been reported to be 5.2 days. The clinical syndrome is nonspecific, which makes it clinically indistinguishable from other viral respiratory illnesses. Some patients may even be asymptomatic.
+      The median age of patients is between 49 and 56 years. The incubation period of this virus has been reported to be 5.2 days. The disease is almost indistinguishable from other viral respiratory illnesses. Some patients may even be asymptomatic.
        <br> <br>
       Such an unpredictable yet dangerous disease needs to be taken special care of. Any strong symptoms of covid-19 should always be checked and consulatation with the nearest doctor is vital.<br> <br>
       Awareness does not only mean taking care of yourself. It also involves taking care of your surroundings and peers and if they catch the virus, there's a high chance that you will too.
@@ -199,13 +203,15 @@
       <img src="./img/coron.svg" alt="" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
     </div>
     <div class="sidetxt">
-    <h2>Proper Sanitization</h2>
+    <h2>Proper Sanitation</h2>
     <p>
-      Social distancing, also called “physical distancing,” means keeping a safe space between yourself and other people who are not from your household. <br> <br>
-      To practice social or physical distancing, stay at least 6 feet (about 2 arms’ length) from other people who are not from your household in both indoor and outdoor spaces.<br> <br>
-      Keeping space between you and others is one of the best tools we have to avoid being exposed to this virus and slowing its spread in communities.
-      <br> <br>
-      Concluding from the results of the simulation on the left, the number of people doing outdoor activites is directly proportional to the speed and spread of coronavirus.
+      Wash, wash, wash your hands  <br>
+      Yes, you’re hearing it everywhere, because it’s the best line of defence. Wash hands frequently with soap and water for at least 20-30 seconds. 
+      Keep your distance <br>
+Maintain a distance of at least 1 meter (3 feet) from people who are coughing or sneezing.<br>
+Don’t cough or sneeze into your hands, cover your mouth and nose with your elbow or tissue when coughing or sneezing. Dispose of used tissue immediately.<br>
+Avoid touching your eyes, nose and mouth. 
+For more information, visit <a href="https://www.unicef.org/coronavirus/cleaning-and-hygiene-tips-help-keep-coronavirus-covid-19-out-your-home" style="color: white;">unicef</a>
     </p>
   </div>
   </div>
@@ -214,6 +220,9 @@
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
   AOS.init();
+  function tracker(){
+    window.location.href="./web/tracker.html"
+  }
 </script>
 </body>
 </html>
