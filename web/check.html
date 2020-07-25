@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+	   <title>
+		     Get value of selected radio button
+	   </title>
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="js/symptom.js"></script>
+  </head>
+  <body>
+
+  <form>
+    <p>
+  		Covid-19 Symptom Checker
+  	</p>
+    	Fever:
+    	<input type="radio" name="Fever" value="Yes">Yes
+    	<input type="radio" name="Fever" value="No">No
+    	<br>
+      Tiredness:
+      <input type="radio" name="Tiredness" value="Yes">Yes
+      <input type="radio" name="Tiredness" value="No">No
+    	<br>
+      Sore Throat:
+      <input type="radio" name="Sore_Throat" value="Yes">Yes
+      <input type="radio" name="Sore_Throat" value="No">No
+      <br>
+      Dry Cough:
+      <input type="radio" name="Dry_cough" value="Yes">Yes
+      <input type="radio" name="Dry_cough" value="No">No
+      <br>
+      Headache:
+      <input type="radio" name="Headache" value="Yes">Yes
+      <input type="radio" name="Headache" value="No">No
+      <br>
+      Difficulty in Breathing:
+      <input type="radio" name="diffbreath" value="Yes">Yes
+      <input type="radio" name="diffbreath" value="No">No
+
+    	<button type="button" onclick="displayRadioValue()">
+    		Submit
+    	</button>
+      <div class="result"></div>
+</form>
+	<br>
+
+	<div id="result"></div>
+
+
+</body>
+
+</html>
