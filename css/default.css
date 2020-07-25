@@ -24,7 +24,7 @@
   font-weight:300;
 }
 .inf {
-  min-height: 75vh;
+  min-height: 100vh;
   position: relative;
 }
 .inf .sidetxt{
@@ -32,8 +32,31 @@
   transform: translateY(0px);
   color: white;
   width: 40%;
-  top: 50%;
+  top: 40%;
   transform: translateY(-50%);
+  display: inline-block;
+}
+.simp{
+  display: inline-block;
+  text-align: center;
+  margin-left: 40px;
+  margin-top: 60px;
+}
+.foto{
+  display: inline-block;
+  position: absolute;
+  right: 5%;
+  transform: translateY(-50%);
+  top: 40%;
+
+}
+.dhole{
+  display: inline-block;
+  position: absolute;
+  left: 10%;
+  transform: translateY(-50%);
+  top: 40%;
+
 }
 .inf .sidetxt p{
   font-size: 20px;
@@ -170,7 +193,7 @@ canvas {
 }
 
 section {
-  margin: auto 30px ;
+  margin: 100px 30px ;
   max-width: 1000px;
   width: 95%;
   position: relative;
