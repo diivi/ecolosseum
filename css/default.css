@@ -16,9 +16,44 @@
   background: #F43A62; 
   border-radius: 20px;
 }
+.info h1{
+  text-align: center;
+  transform: translateY(0px);
+  color: white;
+  font-size: 80px;
+  font-weight:300;
+}
+.inf {
+  min-height: 75vh;
+  position: relative;
+}
+.inf .sidetxt{
+  position: absolute;
+  transform: translateY(0px);
+  color: white;
+  width: 40%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.inf .sidetxt p{
+  font-size: 20px;
+}
+.inf .sidetxt h2{
+  margin: 0px;
+  font-size: 60px;
+  font-weight:800;
+  color:#f43a62;
+}
+.social .sidetxt{
+  right: 5%;
+}
+.aware .sidetxt{
+  left:5%
 
-  
-
+}
+.sanit .sidetxt{
+  right: 5%;
+}
 html {
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
@@ -27,6 +62,9 @@ html {
 
   margin-top: 20px;
   width: 120px;
+}
+.first{
+  min-height: 50vh;
 }
 .one h3{
   color:white;
@@ -49,9 +87,10 @@ s*{
 }
 .first h1{
   text-align: center;
-  transform: translateY(-100px);
+  transform: translateY(-150px);
   color: white;
   font-size: 64px;
+  font-weight:300;
 }
 .headertext{
   position: absolute;
@@ -77,7 +116,7 @@ body {
 .menu{
   width: 100%;
   text-align: center;
-  transform: translateY(-70px);
+  transform: translateY(-120px);
 }
 .one{
   max-height:450px;
@@ -123,6 +162,91 @@ box-shadow: 0px 0px 41px 15px rgba(71,62,138,1);
   margin-left: -50%;
   position: relative;
 }
+canvas {
+  background: black;
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+section {
+  margin: auto 30px ;
+  max-width: 1000px;
+  width: 95%;
+  position: relative;
+}
+#overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 25%;
+  padding: 3rem;
+  box-sizing: border-box;
+  width: 100%;
+  transition: opacity 250ms ease-in-out;
+  opacity: 0;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.9);
+}
+#overlay.active {
+  opacity: 1;
+}
+
+#overlay p {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+#overlay a {
+  color: #00d1b2;
+  text-decoration: none;
+}
+
+section > div.info {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+  border-top: 1px solid #111;
+  background: black;
+}
+
+section > div.info canvas {
+  flex: 1;
+  background: transparent;
+}
+section > div.info ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  text-align: center;
+  color: white;
+  padding: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}
+@media (min-width: 600px) {
+  section > div.info canvas {
+    width: calc(100% - 200px - 1rem);
+  }
+  section > div.info ul {
+    width: 200px;
+  }
+}
+
+li {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
 .covid-wrapper {
   position: relative;
 }
@@ -131,6 +255,7 @@ box-shadow: 0px 0px 41px 15px rgba(71,62,138,1);
   bottom: 33px;
   left: 36px;
 }
+
 .covid {
   background-image: url("https://www.transparenttextures.com/patterns/dark-stripes.png"), linear-gradient(to left top, #9d1231, #ae1a38, #be2240, #d02a47, #e1324f, #ea4153, #f34e58, #fc5b5d, #fd6e61, #fe7f68, #ff8f70, #ff9e7a);
   width: 410px;
@@ -902,14 +1027,18 @@ box-shadow: 0px 0px 41px 15px rgba(71,62,138,1);
     color: white;
     font-size: 40px;
 }
+
 .one{
-  height: 300px;
+  min-height: 300px;
   width: 300px;
 }
-.s{
+.one{
   margin-top: 20px;
 
   margin-left: 0px;
+}
+.one:hover{
+  box-shadow: none;
 }
   .headertext h1{
     font-size: 52px;
